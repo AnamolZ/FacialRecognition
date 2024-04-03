@@ -1,36 +1,64 @@
-# NeuralFacia
+# Facial Recognition Project
 
-An advanced face recognition system implemented using Python and machine learning techniques.
+This facial recognition project is designed to train a model on a set of labeled images and then use the model to recognize and identify faces in real-time through a webcam feed.
 
-## Features
+## Project Structure
 
-- Efficiently identifies individuals in real-time video frames.
-- Utilizes the K-Nearest Neighbors algorithm for recognition.
-- Supports model data persistence for faster startup times.
+The project is organized as follows:
 
-## Getting Started
+- `images/`: Contains labeled images for training. Each image should be named after the person in the image (e.g., `ElonMusk.png`).
+- `src/`: Contains the source code.
+  - `train_model.py`: Script to train the face recognition model.
+  - `recognize_faces.py`: Script for real-time face recognition.
+- `models/`: Stores the trained model file.
+- `requirements.txt`: Lists the Python dependencies.
+
+## Setup
 
 ### Prerequisites
 
-- Python 3.x
-- OpenCV
-- Face Recognition
-- Scikit-learn
-- Joblib
+- Python 3.6 or higher
+- A webcam for real-time face recognition
 
 ### Installation
 
-1. Repository Cloning
-2. Installing the required libraries
-3. Prepare your training dataset in the training_dataset directory
-4. Run the script
+1. Clone the repository to your local machine:
+   ```
+   git clone https://github.com/AnamolZ/facial_recognition.git
+   cd facial_recognition_project
+   ```
+
+2. Set up a virtual environment (optional but recommended):
+   ```
+   python -m venv env
+   .\env\Scripts\activate  # On Windows
+   source env/bin/activate  # On Unix or MacOS
+   ```
+
+3. Install the required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
 
 ### Usage
-The system identifies individuals in real-time video frames. Recognized names are displayed on the video feed with a green label.
 
-### Customization
-Adjust the frequency, threshold, and duration parameters in the main script to suit your needs.
-Customize the image_directory and model_filename paths as needed.
+1. Place your labeled image files in the `images/` directory. Ensure each image is named after the person in the image.
 
-### License
-This project is licensed under the MIT License - see the LICENSE file for details.
+2. Run `train_model.py` to train the model. This will create a model file in the `models/` directory:
+   ```
+   python src/train_model.py
+   ```
+
+3. Run `recognize_faces.py` to start the real-time face recognition:
+   ```
+   python src/recognize_faces.py
+   ```
+
+## Contributing
+
+Contributions to this project are welcome! Please fork the repository, make your changes, and submit a pull request.
+
+## License
+
+Specify your license here. Common choices include MIT, GPL, and Apache 2.0.
+```
