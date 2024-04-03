@@ -25,7 +25,7 @@ The project is organized as follows:
 1. Clone the repository to your local machine:
    ```
    git clone https://github.com/AnamolZ/FacialRecognition.git
-   cd facial_recognition_project
+   cd FacialRecognition
    ```
 
 2. Set up a virtual environment (optional but recommended):
