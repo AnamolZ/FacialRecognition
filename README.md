@@ -35,6 +35,13 @@ The project is organized as follows:
    source env/bin/activate  # On Unix or MacOS
    ```
 
+. Set up dlib installation:
+   ```
+   pip install dlib_file_name.whl
+   pip install cmake
+   pip install face_recognition
+   ```
+
 3. Install the required dependencies:
    ```
    pip install -r requirements.txt
