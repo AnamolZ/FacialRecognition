@@ -1,4 +1,4 @@
-# Facial Recognition Project
+# Facial Recognition
 
 This facial recognition project is designed to train a model on a set of labeled images and then use the model to recognize and identify faces in real-time through a webcam feed.
 
